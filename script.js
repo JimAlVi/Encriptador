@@ -43,3 +43,12 @@ function desencriptar(stringDesencriptada) {
     }
     return stringDesencriptada
 }
+
+const $content = document.getElementById('mensaje');
+      $btnCopiar = document.getElementById('btnCopiar');
+
+$btnCopiar.addEventListener('click', e => {
+    $content.select();
+    document.execCommand('copy');
+    mensaje.value="";
+})
