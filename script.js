@@ -44,11 +44,11 @@ function desencriptar(stringDesencriptada) {
     return stringDesencriptada
 }
 
-const $content = document.getElementById('mensaje');
-      $btnCopiar = document.getElementById('btnCopiar');
 
-$btnCopiar.addEventListener('click', e => {
-    $content.select();
-    document.execCommand('copy');
-    mensaje.value="";
-})
+function copyText(){
+    var textToCopy = document.getElementById("mensaje");
+    textToCopy.select();
+    textToCopy.setSelectionRange(0, 99999);
+    document.execCommand("copy");
+    mensaje.value = ""
+}
