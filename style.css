@@ -23,6 +23,7 @@ main{
     color: #0a3871;
     margin-top: 90px;
     text-transform: lowercase;
+    resize: none;
 }
 
 ::placeholder{
@@ -45,6 +46,7 @@ main{
     margin-top: 20px;
     padding-left: 20px;
     position: fixed;
+    resize: none;
 }
 
 .mensaje:focus{
@@ -66,6 +68,14 @@ main{
     margin-left: 30px;
     width: 328px;
 }
+.btn-desencriptar:hover{
+    outline: 2px solid #495057;   
+}
+
+.btn-desencriptar:active{
+    background: #104070;
+    color: #ffffff;
+}
 
 .btn-encriptar{
     background-color: #0a3871;
@@ -77,6 +87,33 @@ main{
     width: 328px;
 }
 
+.btn-encriptar:hover{
+    outline: 2px solid #495057;
+}
+
+.btn-encriptar:active{
+    background: #d8dfe8;
+    color: #104070;
+}
+
+.reset{
+    font-size: 25px;
+    margin-left: 30px;
+    border-radius: 75%;
+    cursor: pointer;
+    background: #8f0606;
+    color: #ffffff;
+}
+
+.reset:hover{
+    outline: 2px solid #8f0606;
+}
+
+.reset:active{
+    background: #6a0505;
+}
+
+
 .copiar{
     border: 1px solid #0a3871;
     border-radius: 24px;
@@ -87,6 +124,12 @@ main{
     margin-top: 650px;
     position: absolute;
     width: 336px;
+}
+
+.copiar:active{
+    background: firebrick;
+    cursor: copy;
+    color: #ffffff;
 }
 
 .informacion{
